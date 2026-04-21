@@ -1,0 +1,53 @@
+ssh-keygen -t ed25519
+ss5-keygen -t ed25519
+ssh-keygen -t ed25519
+cat HOME/.ssh/*.pub
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:Quilloster/TP1_AySO_2026.git
+sudo dnf install git -y
+git clone git@github.com:Quilloster/TP1_AySO_2026.git
+cd TP1_AySO_2026
+pwd
+ls -1
+git config --global user.mail joanquillotay@gmail.com
+git config --global user.name Quilloster
+echo "Usuario:$(whoami)">datos_usuario.txt
+cat datos_usuario.txt
+cat /etc/os-realease
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url /etc/os-release
+whoami
+grep "model name" /proc/cpuinfo | tail -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git config --global user.mail "joanquillotay@gmail.com"
+"git config --global user.name "Quilloster"
+git config --global user.name "ADD: agree"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git config --global user.email "joanquillotay@gmail.com"
+git config --global user.email
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep -v "nologin" /etc/passwd | head -10 | sort -t: -k7 > lista_ordenada
+cat lista_ordenada
+git add .
+git commit -m "add: Listado de usuarios ordenada"
+echo "tcpdump" > comando_dump_net
+git add .
+git commit -m "ADD: comando para capturar y analizar el trafico de red"
+cat >> README.md << EOF
+Alumno: Joan Quillotay
+Division 314
+Turno: Noche
+EOF
+
+nano README.md
+git add .
+git commit -m "docs: Agregando informacion del alumno al README"
+history -a
